@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 /** OpenAI-compatible providers we can point the LLM client at. */
-export const LLM_PROVIDERS = ["groq", "gemini", "ollama"] as const;
+export const LLM_PROVIDERS = ["groq", "gemini", "ollama","claude"] as const;
 export type LlmProvider = (typeof LLM_PROVIDERS)[number];
 
 const envSchema = z
