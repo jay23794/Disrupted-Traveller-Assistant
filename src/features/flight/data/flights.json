@@ -1,0 +1,96 @@
+[
+  {
+    "flightNumber": "BA117",
+    "airline": "British Airways",
+    "origin": "LHR",
+    "destination": "JFK",
+    "terminal": "5",
+    "dayOffset": 0,
+    "scheduledDeparture": "08:40",
+    "status": "on_time",
+    "delayMinutes": 0
+  },
+  {
+    "flightNumber": "EK002",
+    "airline": "Emirates",
+    "origin": "LHR",
+    "destination": "DXB",
+    "terminal": "3",
+    "dayOffset": 0,
+    "scheduledDeparture": "12:30",
+    "status": "delayed",
+    "delayMinutes": 120,
+    "delayReason": "Late inbound aircraft"
+  },
+  {
+    "flightNumber": "EK005",
+    "airline": "Emirates",
+    "origin": "DXB",
+    "destination": "JFK",
+    "terminal": "3",
+    "dayOffset": 0,
+    "scheduledDeparture": "09:15",
+    "status": "delayed",
+    "delayMinutes": 180,
+    "delayReason": "Crew out of hours, replacement crew called in"
+  },
+  {
+    "flightNumber": "SQ317",
+    "airline": "Singapore Airlines",
+    "origin": "LHR",
+    "destination": "SIN",
+    "terminal": "2",
+    "dayOffset": 0,
+    "scheduledDeparture": "11:05",
+    "status": "delayed",
+    "delayMinutes": 240,
+    "delayReason": "Air traffic control restrictions across northern Europe"
+  },
+  {
+    "flightNumber": "BA008",
+    "airline": "British Airways",
+    "origin": "LHR",
+    "destination": "SIN",
+    "terminal": "5",
+    "dayOffset": 0,
+    "scheduledDeparture": "14:20",
+    "status": "delayed",
+    "delayMinutes": 420,
+    "delayReason": "Heavy snow and de-icing queues at London Heathrow"
+  },
+  {
+    "flightNumber": "EK001",
+    "airline": "Emirates",
+    "origin": "DXB",
+    "destination": "LHR",
+    "terminal": "3",
+    "dayOffset": 0,
+    "scheduledDeparture": "07:45",
+    "status": "cancelled",
+    "delayMinutes": 0,
+    "delayReason": "Cancelled: severe sandstorm at Dubai"
+  },
+  {
+    "flightNumber": "AA101",
+    "airline": "American Airlines",
+    "origin": "JFK",
+    "destination": "LHR",
+    "terminal": "8",
+    "dayOffset": 0,
+    "scheduledDeparture": "06:00",
+    "status": "departed",
+    "delayMinutes": 0
+  },
+  {
+    "flightNumber": "SQ322",
+    "airline": "Singapore Airlines",
+    "origin": "SIN",
+    "destination": "LHR",
+    "terminal": "3",
+    "dayOffset": -1,
+    "scheduledDeparture": "23:55",
+    "status": "departed",
+    "delayMinutes": 310,
+    "delayReason": "Departed late after a technical inspection"
+  }
+]
