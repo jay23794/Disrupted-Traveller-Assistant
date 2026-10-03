@@ -1,0 +1,102 @@
+[
+  {
+    "id": "lhr-t2-plaza-premium",
+    "name": "Plaza Premium Lounge",
+    "airport": "LHR",
+    "terminal": "2",
+    "airside": true,
+    "openingHours": "05:00-22:00",
+    "programmes": ["priority_pass", "dragonpass"],
+    "amenities": ["hot food", "bar", "showers", "wifi", "work pods"]
+  },
+  {
+    "id": "lhr-t2-aspire",
+    "name": "Aspire Lounge",
+    "airport": "LHR",
+    "terminal": "2",
+    "airside": true,
+    "openingHours": "05:30-21:30",
+    "programmes": ["priority_pass", "loungekey"],
+    "amenities": ["hot food", "bar", "wifi", "quiet zone"]
+  },
+  {
+    "id": "lhr-t3-club-aspire",
+    "name": "Club Aspire Lounge",
+    "airport": "LHR",
+    "terminal": "3",
+    "airside": true,
+    "openingHours": "05:00-22:30",
+    "programmes": ["loungekey", "dragonpass"],
+    "amenities": ["hot food", "bar", "showers", "wifi", "family room"]
+  },
+  {
+    "id": "lhr-t3-no1",
+    "name": "No1 Lounge",
+    "airport": "LHR",
+    "terminal": "3",
+    "airside": true,
+    "openingHours": "05:00-21:00",
+    "programmes": ["priority_pass"],
+    "amenities": ["à la carte dining", "bar", "spa treatments", "wifi"]
+  },
+  {
+    "id": "lhr-t5-aspire-spa",
+    "name": "Aspire Lounge & Spa",
+    "airport": "LHR",
+    "terminal": "5",
+    "airside": true,
+    "openingHours": "05:00-22:00",
+    "programmes": ["loungekey", "dragonpass"],
+    "amenities": ["hot food", "bar", "spa treatments", "showers", "wifi"]
+  },
+  {
+    "id": "lhr-t5-plaza-premium-arrivals",
+    "name": "Plaza Premium Arrivals Lounge",
+    "airport": "LHR",
+    "terminal": "5",
+    "airside": false,
+    "openingHours": "05:00-13:00",
+    "programmes": ["priority_pass", "loungekey"],
+    "amenities": ["breakfast", "showers", "wifi"]
+  },
+  {
+    "id": "dxb-t3-marhaba",
+    "name": "Marhaba Lounge",
+    "airport": "DXB",
+    "terminal": "3",
+    "airside": true,
+    "openingHours": "24 hours",
+    "programmes": ["priority_pass", "loungekey"],
+    "amenities": ["hot food", "bar", "showers", "wifi", "prayer room"]
+  },
+  {
+    "id": "dxb-t3-ahlan",
+    "name": "Ahlan Lounge",
+    "airport": "DXB",
+    "terminal": "3",
+    "airside": true,
+    "openingHours": "24 hours",
+    "programmes": ["dragonpass"],
+    "amenities": ["hot food", "bar", "quiet zone", "wifi"]
+  },
+  {
+    "id": "sin-t1-blossom",
+    "name": "Blossom – SATS & Plaza Premium Lounge",
+    "airport": "SIN",
+    "terminal": "1",
+    "airside": true,
+    "openingHours": "24 hours",
+    "programmes": ["priority_pass", "dragonpass"],
+    "amenities": ["hot food", "bar", "showers", "wifi", "nap rooms"]
+  },
+  {
+    "id": "sin-t1-dnata",
+    "name": "dnata Lounge",
+    "airport": "SIN",
+    "terminal": "1",
+    "airside": true,
+    "openingHours": "06:00-23:00",
+    "programmes": ["loungekey"],
+    "amenities": ["hot food", "bar", "wifi", "work pods"]
+  }
+]

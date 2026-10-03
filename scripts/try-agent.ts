@@ -15,6 +15,10 @@ import { FlightService } from "../src/features/flight/flight.service.js";
 import { MockFlightProvider } from "../src/features/flight/providers/mock-flight.provider.js";
 import { MockWeatherProvider } from "../src/features/flight/providers/mock-weather.provider.js";
 import { OpenMeteoWeatherProvider } from "../src/features/flight/providers/open-meteo.provider.js";
+import { createLoungeAgent } from "../src/features/lounge/lounge.agent.js";
+import { LoungeService } from "../src/features/lounge/lounge.service.js";
+import { MockLoungeProvider } from "../src/features/lounge/providers/mock-lounge.provider.js";
+import { MockMembershipProvider } from "../src/features/lounge/providers/mock-membership.provider.js";
 import { OpenAiCompatibleLlmClient, type LlmClient } from "../src/infra/llm.js";
 import { AppError } from "../src/shared/errors/app-error.js";
 import { createLogger, type Logger } from "../src/shared/utils/logger.js";
@@ -35,6 +39,12 @@ const AGENTS: Record<string, (deps: BuildDeps) => Agent> = {
     const service = new FlightService(new MockFlightProvider(), weather);
 
     return createFlightAgent(llm, service, { maxSteps, logger });
+  },
+
+  lounge: ({ llm, logger, maxSteps }) => {
+    const service = new LoungeService(new MockLoungeProvider(), new MockMembershipProvider());
+
+    return createLoungeAgent(llm, service, { maxSteps, logger });
   },
 };
 

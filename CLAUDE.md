@@ -7,7 +7,7 @@ insurance claim). An orchestrator agent delegates to specialist sub-agents:
 - insurance agent: policy lookup, delay coverage rules, claim drafts, policy docs via MCP
 
 ## Stack
-TypeScript (strict), Node 20, Express 4, Zod 4, Vitest, openai SDK (used as an
+TypeScript (strict), Node 20, Express 4, Zod 4, node:test (built-in runner, no test deps), openai SDK (used as an
 OpenAI-compatible client for Groq/Gemini/Ollama),@modelcontextprotocol/client (MCP TypeScript SDK v2). Never use the v1
 @modelcontextprotocol/sdk package. Imports: Client from "@modelcontextprotocol/client",
 StdioClientTransport from "@modelcontextprotocol/client/stdio".
@@ -28,7 +28,7 @@ No agent framework: we build a small agent runtime ourselves in src/core.
 - Validation: Zod everywhere (env, request bodies, tool args). Use Zod 4 built-in
   z.toJSONSchema() (do not install zod-to-json-schema).
 - Responses use the envelope in shared/utils/apiResponse.ts.
-- Tests colocated as *.test.ts. Mock data in features/<name>/data/*.json.
+- Tests colocated as *.test.ts, run with `npm test` (node --test via tsx). Mock data in features/<name>/data/*.json.
 
 ## Working style
 Only implement the current step. Keep code small and readable. After writing code,

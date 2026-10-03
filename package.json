@@ -13,7 +13,8 @@
     "start": "node dist/server.js",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.scripts.json",
     "smoke:llm": "tsx scripts/llm-smoke.ts",
-    "try:agent": "tsx scripts/try-agent.ts"
+    "try:agent": "tsx scripts/try-agent.ts",
+    "test": "node --import tsx --test $(find src -name '*.test.ts')"
   },
   "dependencies": {
     "@modelcontextprotocol/client": "^2.3.0",

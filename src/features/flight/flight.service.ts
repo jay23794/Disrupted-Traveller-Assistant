@@ -1,6 +1,6 @@
-import { z, type ZodType } from "zod";
-import { NotFoundError, ValidationError } from "../../shared/errors/app-error.js";
+import { NotFoundError } from "../../shared/errors/app-error.js";
 import { todayIsoDate } from "../../shared/utils/dates.js";
+import { parseOrThrow } from "../../shared/utils/parse.js";
 import type { FlightRepository, WeatherRepository } from "./flight.repository.js";
 import {
   airportCodeSchema,
@@ -9,19 +9,6 @@ import {
   type AirportWeather,
   type FlightStatus,
 } from "./flight.schema.js";
-
-/**
- * Validates one caller-supplied value, or fails with a message that reads well both in an
- * HTTP error body and to a model deciding how to correct its own tool arguments.
- */
-function parseOrThrow<T>(schema: ZodType<T>, value: unknown, label: string): T {
-  const result = schema.safeParse(value);
-
-  if (!result.success) {
-    throw new ValidationError(`Invalid ${label}`, z.prettifyError(result.error));
-  }
-  return result.data;
-}
 
 /**
  * The flight feature's business logic: look up a flight, look up airport weather.
